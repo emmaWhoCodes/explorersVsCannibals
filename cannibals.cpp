@@ -4,7 +4,12 @@
 
 using namespace std;
 
-
+// Pre: Takes in a reference list of vectors that are of type int, "printMoves", that has
+//      all of the moves stored in it.
+//
+// Post: Prints out the possible moves to the console. The moves are printed to where we see
+//       the movement of the boat going from the left to the right hand side. The cannibals and
+//       explorers are denoted as "C" or "E" respectively.
 void printLine(list<vector<int> > &printMoves) {
     vector<int> printHelper;
     std::list<vector<int> >::iterator current;
